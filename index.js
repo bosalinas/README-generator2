@@ -53,7 +53,7 @@ inquirer
     ])
 //get all the answers and then use them to fill in the readme
     .then((answers) => {
-        fs.writeFile("./output/README.md", `
+        fs.writeFile(`./output/README.md`, `
 ${renderLicense(answers.license)}
 # Table of Contents
 - [License](#${answers.license})
@@ -65,7 +65,8 @@ ${renderLicense(answers.license)}
 - [Questions](#${answers.github})
 
 # ${answers.title}
-## The license for this project is ${answers.license}
+## Project License
+#### ${answers.license}
 ## Description 
 #### ${answers.description}
 ## Usage
