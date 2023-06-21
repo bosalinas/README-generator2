@@ -53,9 +53,7 @@ inquirer
     ])
 //get all the answers and then use them to fill in the readme
     .then((answers) => {
-
-        fs.writeFile(
-            join(__dirname, 'output', 'README.md'), `
+        fs.writeFile("./output/README.md", `
 ${renderLicense(answers.license)}
 # Table of Contents
 - [License](#${answers.license})
@@ -68,17 +66,17 @@ ${renderLicense(answers.license)}
 
 # ${answers.title}
 ## The license for this project is ${answers.license}
-## Project Description 
+## Description 
 #### ${answers.description}
-## Project Usage
+## Usage
 #### ${answers.usage}
-## Project Installation 
+## Installation 
 #### ${answers.installation}
-## Project Contribution Guidelines
+## Contribution Guidelines
 #### ${answers.contribution}
-## Project Test Instructions 
+## Test Instructions 
 #### ${answers.test}
-## Project Questions
+## Questions
 #### [Github Profile](https://github.com/${answers.github})
 #### If you have additional questions please reach to me via ${answers.email}
 
@@ -88,11 +86,11 @@ ${renderLicense(answers.license)}
     });
 //function to get badges for license chosen
 const renderLicense = (license) => {
-    if (license == "MIT") {
+    if (license == "mit") {
         return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-    } else if (license == "Apache") {
+    } else if (license == "apache") {
         return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    } else if (license == "GPLv2") {
+    } else if (license == "gplv2") {
         return "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
     } else if (license == "None") {
         return "No Licenses were used.";
