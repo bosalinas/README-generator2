@@ -25,7 +25,7 @@ When contributing, please ensure that your code adheres to the existing code sty
 The README Generator is open-source software licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license.
 
 ## Walkthrough Video
-[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/WJOT1R54xAQ)
+[![Watch the video](https://img.youtube.com/vi/WJOT1R54xAQ/hqdefault.jpg)](https://youtu.be/WJOT1R54xAQ)
 
 ## Credits
 The README Node.js Generator is developed and maintained by Bo Salinas
