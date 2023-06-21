@@ -21,10 +21,13 @@ Contributions to the README Generator are welcome! If you find a bug or have an 
 
 When contributing, please ensure that your code adheres to the existing code style and conventions. Include tests for any new functionality or bug fixes and make sure all tests pass before submitting a pull request.
 
-License
+## License
 The README Generator is open-source software licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license.
 
-Credits
+## Walkthrough Video
+
+
+## Credits
 The README Node.js Generator is developed and maintained by Bo Salinas
 
         
