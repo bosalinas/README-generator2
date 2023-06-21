@@ -56,30 +56,30 @@ inquirer
         fs.writeFile(`./output/README.md`, `
 ${renderLicense(answers.license)}
 # Table of Contents
-- [License](#${answers.license})
-- [Description](#${answers.description})
-- [Usage](#${answers.usage})
-- [Installation](#${answers.installation})
-- [Contributions](#${answers.contribution})
-- [Testing](#${answers.test})
-- [Questions](#${answers.github})
+- [License](#project-license)
+- [Description](#description)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Contributions](#contribution-guidelines)
+- [Testing](#test-instructions)
+- [Questions](#questions)
 
 # ${answers.title}
 ## Project License
-#### ${answers.license}
+### ${answers.license}
 ## Description 
-#### ${answers.description}
+### ${answers.description}
 ## Usage
-#### ${answers.usage}
+### ${answers.usage}
 ## Installation 
-#### ${answers.installation}
+### ${answers.installation}
 ## Contribution Guidelines
-#### ${answers.contribution}
+### ${answers.contribution}
 ## Test Instructions 
-#### ${answers.test}
+### ${answers.test}
 ## Questions
-#### [Github Profile](https://github.com/${answers.github})
-#### If you have additional questions please reach to me via ${answers.email}
+### [Github Profile](https://github.com/${answers.github})
+### If you have additional questions please reach to me via ${answers.email}
 
         `, (err) =>
             err ? console.log(err) : console.log('Created README File!')
